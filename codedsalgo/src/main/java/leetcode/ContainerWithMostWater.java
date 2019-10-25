@@ -1,4 +1,4 @@
-package exercise.leetcode;
+package main.java.leetcode;
 
 public class ContainerWithMostWater {
     public static int maxAreaBF(int[] height) {
