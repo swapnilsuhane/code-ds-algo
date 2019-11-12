@@ -1,6 +1,5 @@
-package exercise.hackerrank.medium;
+package main.java.exercise.hackerrank.medium;
 
-import com.sun.deploy.util.StringUtils;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

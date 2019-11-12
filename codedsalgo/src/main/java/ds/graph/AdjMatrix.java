@@ -1,4 +1,4 @@
-package ds.graph;
+package main.java.ds.graph;
 
 public class AdjMatrix {
     static Integer[][] am;
