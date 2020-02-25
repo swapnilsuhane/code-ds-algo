@@ -1,4 +1,4 @@
-package ds.tree;
+package main.java.ds.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

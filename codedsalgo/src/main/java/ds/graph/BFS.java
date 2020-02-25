@@ -22,10 +22,7 @@ public class BFS {
                     visited[e-1]=true;
                 }
             }
-
-
         }
-
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ds.tree;
+package main.java.ds.tree;
 
 public class BinaryTreeDeleteOpt {
     static Node found;

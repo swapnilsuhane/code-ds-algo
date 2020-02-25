@@ -1,4 +1,4 @@
-package ds.tree;
+package main.java.ds.tree;
 
 //A tree is Continuous tree if in each root to leaf path, absolute difference between keys of two adjacent is 1. We
 // are given a binary tree, we need to check if tree is continuous or not.

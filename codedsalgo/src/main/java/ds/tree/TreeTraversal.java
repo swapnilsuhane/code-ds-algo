@@ -1,4 +1,6 @@
-package ds.tree;
+package main.java.ds.tree;
+
+import java.util.LinkedList;
 
 public class TreeTraversal {
 
@@ -59,6 +61,26 @@ public class TreeTraversal {
 
     void printPreorder() { printPreorder(root); }
 
+    private void printBFS(){
+        LinkedList<Node> qu = new LinkedList();
+        if(root !=null){
+            qu.add(root);
+        }
+
+        while(!qu.isEmpty()){
+
+            Node node  = qu.pop();
+            System.out.print(node.key + ", ");
+
+            if(node.left !=null){
+                qu.add(node.left);
+            }
+            if(node.right !=null){
+                qu.add(node.right);
+            }
+        }
+    }
+
     // Driver method
     public static void main(String[] args) {
         TreeTraversal tree = new TreeTraversal();
@@ -76,6 +98,9 @@ public class TreeTraversal {
 
         System.out.println("\nPostorder traversal of binary tree is ");
         tree.printPostorder();
+
+        System.out.println("\nBFS traversal of binary tree is ");
+        tree.printBFS();
     }
 
     
