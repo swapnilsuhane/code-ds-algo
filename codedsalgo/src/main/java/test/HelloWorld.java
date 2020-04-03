@@ -1,5 +1,9 @@
 package main.java.test;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -29,52 +33,20 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
-       // getIndexes(new int[]{0,0}, 3, 0, 0,0);
-        System.out.println("North".hashCode());
-        System.out.println("NORTH".hashCode());
-        List<String>[] lists = new ArrayList[5];
-        List<String> s = new ArrayList<>();
-        s.stream().distinct().collect(Collectors.toList());
-        s.add("fds");
-        lists[0]=s;
-        lists[1]=s;
-
-        //lists[1]= Arrays.asList("4");
-        System.out.println(lists[1]);
-
-        System.out.println("how".substring(0, 0+1));
-        Map<String, String> map = new HashMap();
-        System.out.println("((()))".replace("((()))".charAt(1), "((()))".charAt(3)));
-        String b = "((()))";
-
-        System.out.println(swap(b, 2, 4));
-    int i = 0;
-        System.out.println(i+=2);
-        System.out.println(i+=2);
 
 
 
+        byte[] n = new byte[3];
+        n[0]=10;
+        n[1]=10+10;
+        n[2] = (byte) (n[0]+n[1]);
+        System.out.println(n[2]);
+        String s = "swap";
+        //C U D
 
+        LinkedList l = new LinkedList();
+        System.out.println("Xor: "+  (1^5));
 
-//        HashMap<Integer, List> map=new HashMap<>();
-//
-//        List<Character> l=new ArrayList<>();
-//        Optional<Integer> opt;
-//        l.stream().collect(Collectors.toList());
-//        System.out.println((char)97);
-
-
-
-//        Stack s;
-//        map.computeIfPresent(1, (k,v) -> {
-//            System.out.println(k);
-//                    return v;
-//        }
-//        );
-//        LinkedList<Integer> ll = new LinkedList<>();
-//
-//
-//        Set<Integer> fl = new HashSet();
 
     }
 
