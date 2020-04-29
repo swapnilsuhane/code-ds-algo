@@ -1,53 +1,49 @@
 package main.java.test;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class HelloWorld {
 
-    private static int[] getIndexes(int[] idx, int max, int cur, int...var){
-        for (int v: var) {
-            if(v == max){
-                return idx;
-            }
-            return getIndexes(idx, max, cur, v, v++);
-            //System.out.println(v);
-        }
-
-
-        for(int i=0; i<idx.length; i++){
-            cur = Math.max(cur, idx[i]++);
-            System.out.println(idx[i] + " cur :" + cur);
-            return getIndexes(idx, max, cur);
-        }
-        return idx;
-    }
-
-    private static String swap(String base, int i, int j){
-        return base.substring(0, i) + base.substring(j, j+1)+ base.substring(i+1, j)+
-        base.substring(i, i+1) + base.substring(j+1);
-    }
-
     public static void main(String[] args) {
+        HelloWorld h = new HelloWorld();
 
+        System.out.println((8>>2));
 
+    }
 
-        byte[] n = new byte[3];
-        n[0]=10;
-        n[1]=10+10;
-        n[2] = (byte) (n[0]+n[1]);
-        System.out.println(n[2]);
-        String s = "swap";
-        //C U D
+    private static Integer hash(String s) {
+        if (s == null) {
+            return 0;
+        }
+        Map<Character, Integer> freq = new HashMap();
+        for (char c : s.toCharArray()) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
 
-        LinkedList l = new LinkedList();
-        System.out.println("Xor: "+  (1^5));
+        Integer h = 1;
+        for (Map.Entry<Character, Integer> entry : freq.entrySet()) {
+            h *= (entry.getKey().hashCode() * 31 * entry.getValue()) % 1000000;
+        }
+        return h;
 
+    }
 
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> output = new ArrayList();
+        output.add(new ArrayList<Integer>());
+
+        for (int num : nums) {
+            List<List<Integer>> newSubsets = new ArrayList();
+            for (List<Integer> curr : output) {
+                newSubsets.add(new ArrayList<Integer>(curr) {{
+                    add(num);
+                }});
+            }
+            for (List<Integer> curr : newSubsets) {
+                output.add(curr);
+            }
+        }
+        return output;
     }
 
 

@@ -1,4 +1,4 @@
-package exercise.hackerrank.medium;
+package main.java.exercise.hackerrank.medium;
 
 import java.util.ArrayList;
 import java.util.List;

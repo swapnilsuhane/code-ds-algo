@@ -1,4 +1,4 @@
-package exercise.hackerrank.medium.graph;
+package main.java.exercise.hackerrank.medium.graph;
 
 import java.util.HashMap;
 import java.util.Map;

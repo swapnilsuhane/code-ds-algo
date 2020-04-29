@@ -1,4 +1,4 @@
-package exercise.hackerrank.medium;
+package main.java.exercise.hackerrank.medium;
 
 public class SurfaceArea3D {
     // Complete the surfaceArea function below.

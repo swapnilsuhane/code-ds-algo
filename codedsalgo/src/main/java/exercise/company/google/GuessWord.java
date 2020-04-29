@@ -1,4 +1,4 @@
-package exercise.company.google;
+package main.java.exercise.company.google;
 
 import java.util.*;
 

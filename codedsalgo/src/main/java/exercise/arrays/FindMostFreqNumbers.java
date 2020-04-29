@@ -1,4 +1,4 @@
-package exercise.arrays;
+package main.java.exercise.arrays;
 
 import java.util.*;
 
@@ -46,6 +46,7 @@ public class FindMostFreqNumbers {
     public static void main(String[] args) {
         int k = scanner.nextInt();
         scanner.skip("\n");
+
         List<List<Integer>> list = new ArrayList<>();
         while(scanner.hasNextLine()){
             String n = scanner.nextLine();
