@@ -14,6 +14,7 @@ public class HelloWorld {
         System.out.println(String.valueOf(ca));
 
 
+        System.out.println("");
     }
 
     private static Integer hash(String s) {
