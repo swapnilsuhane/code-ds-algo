@@ -8,6 +8,11 @@ public class HelloWorld {
         HelloWorld h = new HelloWorld();
 
         System.out.println((8>>2));
+        String s = 'C'+"";
+        System.out.println(s);
+        char[] ca = {'C'};
+        System.out.println(String.valueOf(ca));
+
 
     }
 

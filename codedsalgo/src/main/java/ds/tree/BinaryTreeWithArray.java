@@ -1,11 +1,11 @@
-package ds.tree;
+package main.java.ds.tree;
 
 public class BinaryTreeWithArray {
 
     public static void main(String[] args) {
         Tree_Array treeArray = new Tree_Array();
         treeArray.Root("A");
-        //treeArray.setLeft("B", 0);
+        treeArray.setLeft("B", 0);
         treeArray.setRight("C", 0);
         treeArray.setLeft("D", 1);
         treeArray.setRight("E", 1);
